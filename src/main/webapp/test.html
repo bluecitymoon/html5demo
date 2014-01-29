@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="en"> <!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
+<title>Theme Library 2.3, Werner Enterprises</title>
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/styles.css">
+<link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/foundation/print.css" media="print" />
+<link rel="stylesheet" href="css/custom/custom.css">
+<link rel="stylesheet" href="themelibrary_files/css/shCore.css">
+<link rel="stylesheet" href="themelibrary_files/css/shCoreDefault.css">
+<!--[if IE]>
+		<link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/foundation/ie.css">
+		<script src="https://static.werner.com/werner/2.3/js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="brand">
+		<div class="row">
+			<h1 class="werner logo">Werner Enterprises</h1>
+			<div class="appname hide-on-phones">Theme Library 2.3</div>
+			<address>
+				<span> <strong>Welcome User</strong> <a class="login-secure line" href="#">Log Off</a>
+				</span>
+			</address>
+		</div>
+	</header>
+	<!-- // end branding header -->
+	<div id="nav-wrap">
+		<nav id="nav" class="site-nav">
+			<div class="row">
+				<ul>
+					<li><a href="index.html" title="" class="active">Layout</a></li>
+					<li><a href="forms.html" title="">Forms</a></li>
+					<li><a href="buttons.html" title="">Buttons</a></li>
+					<li><a href="tables.html" title="">Tables</a></li>
+					<li><a href="icons.html" title="">Icons</a></li>
+					<li><a href="misc.html" title="">Misc</a></li>
+					<li><a href="commandments.html" title="">Commandments</a></li>
+					<li><a href="release.html" title="">Release Notes</a></li>
+					<li><a href="resources.html" title="">Resources</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- nav wrap -->
+	<!-- .end site navigation -->
+	<section class="mainbg">
+		<div class="row">
+			<div class="three columns" id="toc"></div>
+			<div class="nine columns">
+				<div class="app-wrapper ui-corner-top">
+					<div class="blue module ui-corner-top clearfix" style="margin-bottom: 0px;">
+						<h2>Theme - Exploded View</h2>
+					</div>
+					<div class="content">
+						<h4 id="tocBasicPageSetup" class="toc">Basic Page Setup</h4>
+						<p>
+							With HTML 5 applied to our theme, the doctype is now only
+							<code>&lt;!DOCTYPE html&gt;</code>
+							. All of the IE conditionals not specific to an IE only style sheet will reside before the
+							<code>&lt;head&gt;</code>
+							tag for speedier loading. The meta viewport must be applied to create the proper ratio when viewing on mobile devices. More IE specific attention is required on a specific style sheet before the closing
+							<code>&lt;/head&gt;</code>
+							tag.
+						</p>
+						<p>
+							The javascript files should reside below the footer section and before the closing
+							<code>body</code>
+							tag. There is an exception for <abbr title="Flash of Unstyled Content">FOUC</abbr> and you can place the problem javascript immediately before the closing
+							<code>head</code>
+							tag.
+						</p>
+
+						<pre class="brush: xml">&lt;!DOCTYPE html&gt;
+&lt;!--[if lte IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt; &lt;html class="no-js lt-ie9" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt; &lt;html class="no-js ie9" lang="en"&gt; &lt;! --&gt; &lt;html lang="en"&gt; &lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;!-- Set the viewport width to device width for mobile --&gt;
+	&lt;meta name="viewport" content="width=device-width" /&gt;
+	&lt;title&gt;Werner Enterprises&lt;/title&gt;
+	&lt;!-- Required CSS Files --&gt;
+	&lt;link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/styles.min.css"&gt;
+	&lt;link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/foundation/print.css" media="print"&gt;
+	&lt;!--[if IE]&gt;
+	&lt;link rel="stylesheet" href="https://static.werner.com/werner/2.3/css/foundation/ie.css"&gt;
+	&lt;script src="https://static.werner.com/werner/2.3/js/html5.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+	&lt;!-- [ Header, Body Content, and Footer Code will go here. ] --&gt;
+
+
+	&lt;!-- Required JS Files --&gt;
+	&lt;script src="https://static.werner.com/werner/2.3/js/jquery-1.8.3.min.js"&gt;&lt;/script&gt;
+	&lt;script src="https://static.werner.com/werner/2.3/js/jquery-ui-1.8.23.min.js"&gt;&lt;/script&gt;
+	&lt;script src="https://static.werner.com/werner/2.3/js/werner-theme.js"&gt;&lt;/script&gt;
+	&lt;!-- jQuery Modules --&gt;
+	&lt;!-- [ Place any jQuery modules or extra javascript here. ] --&gt;
+	&lt;script&gt;
+		$(document).ready(function(){
+
+			// -- [ Page specific javascript goes here. ] --
+
+		});
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+						<br />
+						<h4 id="tocHeader" class="toc">
+							Header (Branding) <span class="label round red">Updated in 2.3</span>
+						</h4>
+						<p>
+							The <strong>row</strong> sets up the width and padding for all scaffolding modules. For more real estate, the application name is hidden with the
+							<code>hide-on-phones</code>
+							class on mobile displays.
+						</p>
+
+						<div class="example">
+							<img src="images/header.png" width="764" height="74" alt="Sample Header Image" class="fancy" />
+						</div>
+						<pre class="brush: xml">&lt;header id="brand"&gt;
+	&lt;div class="row"&gt;
+		&lt;h1 class="werner logo"&gt;Werner Enterprises&lt;/h1&gt;
+		&lt;div class="appname hide-on-phones"&gt;[ Your Application Name ]&lt;/div&gt;
+		&lt;address&gt;
+			&lt;span&gt;
+				&lt;strong&gt;Welcome User&lt;/strong&gt;
+				&lt;a class="login-secure line" href="#"&gt;Log Off&lt;/a&gt;
+			&lt;/span&gt;
+		&lt;/address&gt;
+	&lt;/div&gt;
+&lt;/header&gt;&lt;!-- // end branding header --&gt;</pre>
+
+						<br />
+						<h4 id="tocSiteNavigation" class="toc">
+							Site Navigation <span class="label round red">Updated in 2.3</span>
+						</h4>
+						<p>
+							To show an active state for the main navigation heirarchy the class
+							<code>active</code>
+							must be added to the anchor. Otherwise, the regular links are just a
+							<code>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</code>
+							without a class or id attribute.
+						</p>
+						<p>
+							<em>If you will not be using the sub-navigation links, remove the class <code>sub-nav</code> from the <code>nav</code> tag.
+							</em>
+						</p>
+
+						<div class="example">
+							<div id="ex-nav-wrap">
+								<nav id="ex-nav" class="site-nav sub-nav">
+									<div class="row">
+										<ul>
+											<li><a href="javascript:void(0);" title="" class="active">Link 01 (Active)</a>
+												<ul class="active">
+													<li><a href="javascript:void(0);">Sub-link 01</a></li>
+													<li class="ui-tabs-selected ui-state-active"><a href="javascript:void(0);">Sub-link 02 (Active)</a></li>
+													<li><a href="javascript:void(0);">Sub link 03</a></li>
+												</ul></li>
+											<li><a href="javascript:void(0);" title="">Link 02</a></li>
+											<li><a href="javascript:void(0);" title="">Link 03</a></li>
+										</ul>
+									</div>
+								</nav>
+								<!-- .end site navigation -->
+							</div>
+							<!-- // end nav wrap -->
+						</div>
+						<pre class="brush: xml">&lt;div id="nav-wrap"&gt;
+	&lt;nav id="nav" class="site-nav sub-nav"&gt;
+		&lt;div class="row"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="/" title="" class="active"&gt;Link 01 (Active)&lt;/a&gt;
+					&lt;ul class="active"&gt;
+						&lt;li&gt;&lt;a href="/"&gt;Sub-link 01&lt;/a&gt;
+						&lt;li class="ui-tabs-selected ui-state-active"&gt;&lt;a href="/"&gt;Sub-link 02 (Active)&lt;/a&gt;
+						&lt;li&gt;&lt;a href="/"&gt;Sub link 03&lt;/a&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/" title=""&gt;Link 02&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/" title=""&gt;Link 03&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/nav&gt;
+&lt;/div&gt;&lt;!-- // end site navigation --&gt;</pre>
+
+						<br />
+						<h4 id="tocContentWrapper" class="toc">Content Wrapper</h4>
+						<p>The Content wrapper is probably the most important part of the aesthetics in the enterprise theme. This encompasses the entire pagee content. By wrapping the application in this code, it creates a white background, proper page padding, and sets up the foundation for the grid system.
+							This code should be placed immediately after the navigation segment.</p>
+						<pre class="brush: xml">&lt;section class="mainbg"&gt;
+
+		&lt;!-- [ Actual page content is placed here. ] --&gt;
+
+&lt;/section&gt;</pre>
+
+						<br />
+						<h4 id="tocAdvancedSearch" class="toc">Advanced Search and Tools</h4>
+						<p>This is a two part module. The text that has the toggle function applied to it and the content that is shown after the toggle. A jQuery initialization is required for this to work.</p>
+
+						<div class="example">
+							<div class="row">
+								<div class="twelve columns">
+									<p>
+										<a id="ex-advsearch-toggle" class="toolsarrow">Advanced Search and Tools</a>
+									</p>
+								</div>
+							</div>
+							<div class="row" id="ex-advsearch">
+								<form class="nice custom">
+									<fieldset>
+										<legend>Advanced Search</legend>
+										<p>Content...</p>
+									</fieldset>
+								</form>
+							</div>
+							<!-- .end tools -->
+						</div>
+						<pre class="brush: xml">&lt;div class="row"&gt;
+	&lt;div class="twelve columns"&gt;
+		&lt;p&gt;
+			&lt;a id="advsearch-toggle" class="toolsarrow"&gt;Advanced Search and Tools&lt;/a&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<p>
+							<strong>Toggled Content:</strong> Wrap all content that will be toggled with the code below. This will be placed directly underneath the Search and Tools code.
+						</p>
+
+						<pre class="brush: xml">&lt;div class="row" id="advsearch"&gt;
+	&lt;form class="nice custom"&gt;	
+		&lt;fieldset&gt;&lt;legend&gt;Advanced Search&lt;/legend&gt;
+				&lt;p&gt;Content...&lt;/p&gt;
+		&lt;/fieldset&gt;			
+	&lt;/form&gt;
+&lt;/div&gt;&lt;!-- // end advanced search and tools --&gt;</pre>
+
+						<p>
+							<strong>Initializing</strong>: Add this javascript to activate the Advanced Search and Tools toggle. It should be placed <em>inside</em> the
+							<code>$(document).ready()</code>
+							function.
+						</p>
+
+						<pre class="brush: js">// Advanced Search & Tools Toggle
+$('#advsearch').hide();
+$('#advsearch-toggle').click(function(){
+	$('#advsearch').slideToggle(400);
+	$(this).toggleClass("toolsarrow-active");
+	return false;
+});</pre>
+
+						<br />
+						<h4 id="todAppWrapper" class="toc">App Wrapper</h4>
+						<p>
+							The main function of the app wrapper is to give a work area based on the number of columns you choose (up to 12). You can have more than one app wrapper. The wrapper also places a 1pt gray line around the module area. This cannot be removed. If you are going to use a module header with the
+							wrapper, you will need to apply the class
+							<code>ui-corner-top</code>
+							. This adds round corners to just the top of the wrapper, hiding it behind the header module.
+						</p>
+
+						<div class="example">
+							<img src="images/app_wrapper.png" width="764" height="74" alt="Application Wrapper" class="fancy" />
+						</div>
+						<pre class="brush: xml">&lt;div class="row"&gt;
+	&lt;div class="eight columns"&gt;
+		&lt;div class="app-wrapper ui-corner-top"&gt;
+
+			&lt;!-- [ Module Headers and Content ] --&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<br />
+						<h4 id="tocModuleHeaders" class="toc">
+							Module Headers <span class="label round green">Updated in 2.3</span>
+						</h4>
+						<p>
+							Primary module headers use the class
+							<code>blue</code>
+							while secondary modules use the class
+							<code>gray</code>
+							. Tertiary modules, or "modules within modules" should have no color specified. Header modules should be placed inside an <strong>app-wrapper</strong>
+							<code>div</code>
+							. Header Module text should <strong>always</strong> use an
+							<code>h2</code>
+							tag.
+						</p>
+
+						<div class="example">
+							<div class="row">
+								<div class="eight columns">
+									<div class="app-wrapper ui-corner-top">
+										<div class="blue module ui-corner-top clearfix">
+											<h2>Blue Module</h2>
+										</div>
+										<div class="content">
+											<div class="app-wrapper ui-corner-top">
+												<div class="module ui-corner-top clearfix">
+													<h2>Inner Module</h2>
+												</div>
+												<div class="content">
+													<p>Content...</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="four columns">
+									<div class="app-wrapper ui-corner-top">
+										<div class="gray module ui-corner-top clearfix">
+											<h2>Gray Module</h2>
+										</div>
+										<div class="content">
+											<p>Content...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<pre class="brush: xml">&lt;div class="app-wrapper ui-corner-top"&gt;
+	&lt;div class="blue module ui-corner-top clearfix"&gt;
+		&lt;h2&gt;Blue Module&lt;/h2&gt;
+	&lt;/div&gt;
+	&lt;div class="content"&gt;
+		&lt;div class="app-wrapper ui-corner-top"&gt;
+			&lt;div class="module ui-corner-top clearfix"&gt;
+				&lt;h2&gt;Inner Module&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;div class="content"&gt;Content...&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="app-wrapper ui-corner-top"&gt;
+	&lt;div class="gray module ui-corner-top clearfix"&gt;
+		&lt;h2&gt;Gray Module&lt;/h2&gt;
+	&lt;/div&gt;
+	&lt;div class="content"&gt;Content...&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<br />
+						<h4 id="tocModuleHeadersTabs" class="toc">
+							Module Header with Tabs <span class="round red label">Updated 2.2</span>
+						</h4>
+						<p>
+							As with all other tabular modules, the selected option should have these classes applied:
+							<code>ui-state-default ui-tabs-selected ui-state-active</code>
+							. You will need to add a class of
+							<code>corner</code>
+							to the very left-most tab to apply rounded corners. These tabs require jQuery initialization.
+						</p>
+						<p>
+							<strong>Note:</strong> Module Tabs no longer need separate code to go vertical on mobile as of version 2.2.
+						</p>
+
+						<div class="example">
+							<div id="example-moduleTabs" class="app-wrapper ui-corner-top">
+								<nav class="blue module-nav ui-corner-top clearfix">
+									<section class="moduleNavigation">
+										<ul>
+											<li class="corner"><a href="#tabs-1"><span>Module Tab 01</span></a></li>
+											<li><a href="#tabs-2"><span>Module Tab 02</span></a></li>
+											<li><a href="#tabs-3"><span>Module Tab 03</span></a></li>
+										</ul>
+									</section>
+								</nav>
+								<div id="tabs-1">
+									<div class="content">
+										<p>Content for Tab 01.</p>
+									</div>
+								</div>
+								<div id="tabs-2">
+									<div class="content">
+										<p>Content for Tab 02.</p>
+									</div>
+								</div>
+								<div id="tabs-3">
+									<div class="content">
+										<p>Content for Tab 03.</p>
+									</div>
+								</div>
+							</div>
+							<!-- // end module tabs -->
+						</div>
+						<pre class="brush: xml">&lt;div id="moduleTabs" class="app-wrapper ui-corner-top"&gt;
+	&lt;nav class="blue module-nav ui-corner-top clearfix"&gt;
+		&lt;section class="moduleNavigation"&gt;
+			&lt;ul&gt;
+				&lt;li class="corner"&gt;&lt;a href="#tabs-1"&gt;&lt;span&gt;Module Tab 01&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#tabs-2"&gt;&lt;span&gt;Module Tab 02&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#tabs-3"&gt;&lt;span&gt;Module Tab 03&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/nav&gt;
+	&lt;div id="tabs-1"&gt;
+
+		&lt;!-- [ Content for Tab 01 here. ] --&gt;
+
+	&lt;/div&gt;
+	&lt;div id="tabs-2"&gt;
+
+		&lt;!-- [ Content for Tab 02 here. ] --&gt;
+
+	&lt;/div&gt;
+	&lt;div id="tabs-3"&gt;
+
+		&lt;!-- [ Content for Tab 03 here. ] --&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // end module tabs --&gt;</pre>
+
+						<p>
+							<strong>Initialization:</strong> Place the javascript below inside the
+							<code>$(document).ready()</code>
+							function.
+						</p>
+
+						<pre class="brush: js">// Module tabs initialization
+$("#moduleTabs").tabs();</pre>
+
+						<br />
+						<h4 id="tocSmalltabs" class="toc">
+							Small Tabs <span class="round red label">Updated 2.2</span>
+						</h4>
+						<p>
+							Small tabs are to be used as secondary navigation to <strong>Blue Module with Tabs</strong>. At this time we have not styled them for any other use.
+						</p>
+
+						<div class="example">
+							<div id="example-subTabs">
+								<nav class="module-sub-nav">
+									<section class="subNavigation clearfix">
+										<ul>
+											<li><a href="#sub-1">Subtab 01</a></li>
+											<li><a href="#sub-2">Subtab 02</a></li>
+											<li><a href="#sub-3">Subtab 03</a></li>
+										</ul>
+									</section>
+								</nav>
+								<div class="app-wrapper" style="border-top: 0;">
+									<div id="sub-1">
+										<div class="content">
+											<p>Subtab Content 01</p>
+										</div>
+									</div>
+									<div id="sub-2">
+										<div class="content">
+											<p>Subtab Content 02</p>
+										</div>
+									</div>
+									<div id="sub-3">
+										<div class="content">
+											<p>Subtab Content 03</p>
+										</div>
+									</div>
+								</div>
+								<!-- // end content -->
+							</div>
+							<!-- // end subTabs -->
+						</div>
+						<pre class="brush: xml">&lt;div id="subTabs"&gt;
+	&lt;nav class="module-sub-nav"&gt;
+		&lt;section class="subNavigation clearfix"&gt;
+			&lt;ul&gt;
+				&lt;li class="ui-tabs-selected ui-state-active"&gt;&lt;a href="#sub-1"&gt;Subtab 01&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#sub-2"&gt;Subtab 02&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#sub-3"&gt;Subtab 03&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/nav&gt;
+	&lt;div id="sub-1"&gt;
+
+		&lt;!-- Subtab Content 01 --&gt;
+
+	&lt;/div&gt;
+	&lt;div id="sub-2"&gt;
+
+		&lt;!-- Subtab Content 02 --&gt;
+
+	&lt;/div&gt;
+	&lt;div id="sub-3"&gt;
+
+		&lt;!-- Subtab Content 03 --&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!-- // end subTabs --&gt;</pre>
+
+						<p>
+							<strong>Initialization:</strong> Place the javascript below inside the
+							<code>$(document).ready()</code>
+							function.
+						</p>
+
+						<pre class="brush: js">// Module tabs initialization
+$("#subTabs").tabs();</pre>
+
+						<br />
+						<h4 id="tocFooter" class="toc">
+							Footer <span class="label round red">Updated in 2.3</span>
+						</h4>
+						<p>
+							The footer code below should immediately preceed the javascript at the end of the page. We have added classes for applications other than SMART. You can change the footer logo by replacing
+							<code>logo smart</code>
+							to a predefined class of
+							<code>logo weconnect</code>
+							. If you would like to see other app logos please let the UI team know.
+						</p>
+
+						<div class="example">
+							<img src="images/footer.png" width="764" height="74" alt="footer" class="fancy" />
+						</div>
+						<pre class="brush: xml">&lt;footer role="footer"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="eight columns"&gt;
+			&lt;p&gt;Copyright &amp;copy; 2009 - 2013 Werner Enterprises. All rights reserved.&lt;/p&gt;
+			&lt;address&gt;
+				&lt;a href="http://www.werner.com/content/about/privacy_policy.cfm" title="View information on our Privacy Policy" class="display-inline" rel="external"&gt;Privacy Policy &lt;i class="icon-external-link"&gt;&lt;/i&gt;&lt;/a&gt;
+				&lt;a href="http://www.werner.com/content/about/terms_and_conditions.cfm" title="View information on our Terms and Conditions" rel="external"&gt;Terms and Conditions &lt;i class="icon-external-link"&gt;&lt;/i&gt;&lt;/a&gt;
+				&lt;a href="http://www.werner.com" title="Werner Enterprises consumer website." rel="external"&gt;www.werner.com &lt;i class="icon-external-link"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;/address&gt;
+		&lt;/div&gt;
+		&lt;div class="four columns"&gt;
+			&lt;h6 class="logo smart"&gt;Powered by SMART&lt;/h6&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</pre>
+
+						<br />
+					</div>
+					<!-- .end content -->
+				</div>
+				<!-- .end app wrapper -->
+			</div>
+			<!-- // end of twelve columns -->
+		</div>
+		<!-- // end row -->
+	</section>
+
+
+	<!-- FOOTER -->
+	<footer role="footer">
+		<div class="row">
+			<div class="eight columns">
+				<p>Copyright &copy; 2009 - 2013 Werner Enterprises. All rights reserved.</p>
+				<address>
+					<a href="http://www.werner.com/content/about/privacy_policy.cfm" title="View information on our Privacy Policy" class="display-inline" rel="external">Privacy Policy <i class="icon-external-link"></i></a> <a href="http://www.werner.com/content/about/terms_and_conditions.cfm"
+						title="View information on our Terms and Conditions" rel="external">Terms and Conditions <i class="icon-external-link"></i></a> <a href="http://www.werner.com" title="Werner Enterprises consumer website." rel="external">www.werner.com <i class="icon-external-link"></i></a>
+				</address>
+			</div>
+			<div class="four columns">
+				<h6 class="logo smart">Powered by SMART</h6>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Required JS Files -->
+	<script src="https://static.werner.com/werner/2.3/js/jquery-1.8.3.min.js"></script>
+	<script src="https://static.werner.com/werner/2.3/js/jquery-ui-1.8.23.min.js"></script>
+	<script src="https://static.werner.com/werner/2.3/js/werner-theme.js"></script>
+	<!-- jQuery Modules -->
+
+	<!-- Theme Library Specific -->
+	<script src="themelibrary_files/js/shCore.js"></script>
+	<script src="themelibrary_files/js/shBrushCss.js"></script>
+	<script src="themelibrary_files/js/shBrushJScript.js"></script>
+	<script src="themelibrary_files/js/shBrushXml.js"></script>
+	<script src="js/custom/theme-library.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// Format all code snippets
+			SyntaxHighlighter.all()
+
+			// Build Table of Contents
+			buildTOC()
+
+			// Advanced Search & Tools Toggle
+			$('#ex-advsearch').hide();
+			$('#ex-advsearch-toggle').click(function() {
+				$('#ex-advsearch').slideToggle(400);
+				$(this).toggleClass("toolsarrow-active");
+				return false;
+			});
+
+			// Module tabs initialization
+			$("#example-subTabs, #example-moduleTabs").tabs();
+
+		}); // end document ready
+	</script>
+</body>
+</html>
+
